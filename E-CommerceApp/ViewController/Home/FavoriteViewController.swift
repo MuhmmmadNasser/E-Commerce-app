@@ -4,7 +4,7 @@
 //
 //  Created by Mohamed on 13/09/2021.
 //
-
+/*
 import UIKit
 
 class FavoriteViewController: UIViewController {
@@ -37,7 +37,7 @@ extension FavoriteViewController:UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SingleFavoriteTableViewCell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SingleFavoriteTableViewCell
         
         
         //cell.separatorInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
@@ -52,15 +52,8 @@ extension FavoriteViewController:UITableViewDelegate, UITableViewDataSource{
         cell.layer.masksToBounds = true
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         */
-        return cell
+        //return cell
     }
-
-    
-   
-    
-
-    
-    
-    
     
 }
+*/

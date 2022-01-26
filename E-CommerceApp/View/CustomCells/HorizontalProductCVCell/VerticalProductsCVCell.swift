@@ -9,6 +9,11 @@ import UIKit
 
 class VerticalProductsCVCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var descriptionCell: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

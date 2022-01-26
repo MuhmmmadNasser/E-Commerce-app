@@ -1,6 +1,6 @@
 
 import Foundation
-struct Json4Swift_Base : Codable {
+struct GeneralModel : Codable {
 	let statusCode : Int?
 	let message : String?
 

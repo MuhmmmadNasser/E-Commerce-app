@@ -9,6 +9,9 @@ import UIKit
 
 class HorizontalProductCVCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var descriptionCell: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

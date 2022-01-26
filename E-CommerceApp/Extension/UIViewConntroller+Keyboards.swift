@@ -21,7 +21,7 @@ extension UIViewController {
     }
     
     
-    
+    // diffrent way
     // TO MAKE KEY BOARD UNDER THE VIEW NEW
     public func KeyboardUnderTheView() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)

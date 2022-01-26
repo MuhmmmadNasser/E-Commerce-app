@@ -9,9 +9,16 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    //MARK: - VARIABLES
     
+    let userDefaults = UserDefaults.standard
     
+    //MARK: - OUTLETS
     @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var nameabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var governmentLabel: UILabel!
+    @IBOutlet weak var bioLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +26,12 @@ class ProfileViewController: UIViewController {
         //circle image
         profileImg.clipsToBounds = true
         profileImg.layer.cornerRadius = profileImg.frame.height / 2
+        
+        //UserDefaults
+//        nameabel.text = userDefaults.string(forKey: "userName")
+//        cityLabel.text = userDefaults.string(forKey: "userCity")
+//        governmentLabel.text = userDefaults.string(forKey: "userGovernment")
+//        bioLabel.text = userDefaults.string(forKey: "userBio")
         
     }
     

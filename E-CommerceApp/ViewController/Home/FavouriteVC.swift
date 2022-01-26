@@ -8,14 +8,19 @@
 import UIKit
 
 class FavouriteVC: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.registerNib(cell: FavouriteTFCell.self)
+        
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -26,4 +31,14 @@ class FavouriteVC: UIViewController {
     }
     */
 
+}
+extension FavouriteVC: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeue() as FavouriteTFCell
+        return cell
+    }
 }
