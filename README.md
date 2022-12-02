@@ -1,4 +1,4 @@
-# E-Commerce-app
+# Devices E-Commerce App
 View a group of electronic devices such as (Cameras, Gps)
 
 # Usage 
